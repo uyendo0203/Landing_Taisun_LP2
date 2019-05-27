@@ -25,3 +25,7 @@ $(window).on('load',function(){
 $(window).on('resize',function(){
     changeViewDetect()
 })
+
+
+$(".rule-content").mCustomScrollbar();
+$(".list-result").mCustomScrollbar();
