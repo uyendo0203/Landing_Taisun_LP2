@@ -260,7 +260,6 @@ $color-yellow : #fff3ae;
             position: relative;
             margin-top: -15px;
             width: 100%;
-            float: left;
 
             @media(max-width: 1600px) {
                 max-width: 42.813vw;
@@ -326,18 +325,20 @@ $color-yellow : #fff3ae;
         &--left {
             position: absolute;
             width: 40%;
+            left: 7.5%;
+            top: 3.6666%;
 
-            @media(max-width: 1600px) {
-                max-width: 630px;
-                transform: scale(0.7);
-                position: absolute;
-                top: -15%;
-                float: none;
-            }
+            // @media(max-width: 1600px) {
+            //     max-width: 630px;
+            //     transform: scale(0.7);
+            //     position: absolute;
+            //     top: -15%;
+            //     float: none;
+            // }
 
-            @media(max-width:1400px) {
+            // @media(max-width:1400px) {
                
-            }
+            // }
 
             @media(max-width:1024px) {
                 width: 100%;
@@ -591,8 +592,8 @@ $color-yellow : #fff3ae;
 
         &--right {
             position: absolute;
-            width: 45.625%;
-            left: 43%;
+            width: 55.625%;
+            right: 0;
             bottom: 0;
             
 
@@ -872,10 +873,10 @@ $color-yellow : #fff3ae;
             }
 
             &--left {
-                width: 45%;
+                width: 32%;
                 position: relative;
-                left: 2.4%;
-                height: 100%;
+                left: 8.125%;
+                top: 14.4444%;
 
                 @media(max-width: 1150px) {
                     width: 50%;
@@ -898,30 +899,27 @@ $color-yellow : #fff3ae;
                 }
 
                 .content {
-                    text-align: center;
-                    width: 100%;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    position: absolute;
-                    transform: translateY(-50%) scale(0.8);
+                    // text-align: center;
+                    // width: 100%;
+                    // top: 50%;
+                    // transform: translateY(-50%);
+                    // position: absolute;
+                    // transform: translateY(-50%) scale(0.8);
 
-                    @media(max-width: 768px) {
-                        transform: scale(0.8);
-                        padding: 0;
-                        top: 0
-                    }
+                    // @media(max-width: 768px) {
+                    //     transform: scale(0.8);
+                    //     padding: 0;
+                    //     top: 0
+                    // }
                 }
             }
 
             &--right {
-                width: 55%;
+                width: 50.3125%;
                 position: absolute;
-                right: 7.5%;
-                top: 50%;
-                transform: translateY(-50%) scale(0.8);
-                -moz-transform: translateY(-50%) scale(0.8);
-                -o-transform: translateY(-50%) scale(0.8);
-                -webkit-transform: translateY(-50%) scale(0.8);
+                right: 3.75%;
+                top: 1%;
+            
 
                 @media(max-width: 1300px) {
                     right: 2.5%;
@@ -1026,7 +1024,7 @@ $color-yellow : #fff3ae;
 
                 &-1 {
                     .parent {
-                        font-size: 200px;
+                        font-size: 162px;
                         color: #11cfff;
                         // text-shadow: -8px 5px 0px #11cfff;
                         -webkit-text-stroke-width: 2px;
@@ -1041,13 +1039,13 @@ $color-yellow : #fff3ae;
                     }
 
                     .child {
-                        font-size: 200px;
+                        font-size: 162px;
                         color: #fff3ae;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
                         position: absolute;
-                        left: 8px;
-                        top: 85px;
+                        left: 7px;
+                        top: 58px;
 
                         @media(max-width: 1024px) {
                             font-size: 120px;
@@ -1059,7 +1057,7 @@ $color-yellow : #fff3ae;
 
                 &-2 {
                     .parent {
-                        font-size: 120px;
+                        font-size: 97px;
                         color: #11cfff;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
@@ -1081,13 +1079,13 @@ $color-yellow : #fff3ae;
                     }
 
                     .child {
-                        font-size: 120px;
+                        font-size: 97px;
                         color: #fff3ae;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
                         position: absolute;
-                        left: 5px;
-                        top: -8px;
+                        left: 4px;
+                        top: -6px;
 
                         @media(max-width: 1200px) {
                             font-size: 95px;
@@ -1176,16 +1174,15 @@ $color-yellow : #fff3ae;
             }
 
             .images-mom-baby {
-                width: 100%;
+                width:71.5%;
                 position: absolute;
-                bottom: -23px;
-                left: 50%;
-                transform: translateX(-50%) scale(0.9);
-                max-width: 560px;
+                bottom: 0;
+                left:0;
+                // transform: translateX(-50%) scale(0.9);
 
-                @media(max-width: 1700px) {
-                    max-width: 450px;
-                }
+                // @media(max-width: 1700px) {
+                //     max-width: 450px;
+                // }
 
                 @media(max-width: 1400px) {
                     max-width: 430px;
@@ -1239,35 +1236,31 @@ $color-yellow : #fff3ae;
                     @media(max-width: 1400px) {
                         transform: scale(0.6) translateY(-25%);
                     }
-                    
+
                     @media(max-width:768px) {
-                        transform: scale(0.9) translateY(15px);
-                    }
-                    @media(max-width:480px) {
                         transform: scale(0.7) translateY(-55px);
                     }
                 }
             }
 
             &--right {
-                width: 55%;
+                width: 43.75%;
                 position: absolute;
-                right: 7.5%;
-                top: 50%;
-                transform: translateY(-50%);
-                -moz-transform: translateY(-50%);
-                -o-transform: translateY(-50%);
-                -webkit-transform: translateY(-50%);
-                @media(max-width:1500px) {
-                    width: 45%;
-                    top: 0;
-                    transform: none;
-                }
+                right: 8.125%;
+                top: 12.2222%;
+                // transform: translateY(-50%);
+                // -moz-transform: translateY(-50%);
+                // -o-transform: translateY(-50%);
+                // -webkit-transform: translateY(-50%);
+
                 @media(max-width: 1300px) {
                     right: 2.5%;
                 }
 
-                
+                @media(max-width:1500px) {
+                    width: 45%;
+                    top: 0
+                }
                 @media(max-width: 1024px) {
                     width: 100%;
                     right: 0;
@@ -1625,10 +1618,10 @@ $color-yellow : #fff3ae;
             }
 
             .logo {
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
+                // position: absolute;
+                // top: 0;
+                // left: 50%;
+                // transform: translateX(-50%);
 
                 &__img {
                     max-width: 170px;
@@ -1642,13 +1635,10 @@ $color-yellow : #fff3ae;
             }
 
             .images-mom-baby {
-                width: 100%;
+                width: 61.625%;
+                left: 6%;
+                bottom: 0;
                 position: absolute;
-                bottom: -23px;
-                left: 50%;
-                transform: translateX(-50%) scale(0.9);
-                max-width: 490px;
-                z-index: 2;
 
                 @media(max-width: 1700px) {
                     max-width: 450px;
@@ -1670,43 +1660,49 @@ $color-yellow : #fff3ae;
             }
 
             &--left {
+                
                 width: 45%;
                 position: relative;
                 left: 2.4%;
                 height: 100%;
+                // @media(max-width: 992px) {
+                //     width: 100%;
+                //     top: 0;
+                //     transform: none;
+                //     -moz-transform: none;
+                //     -o-transform: none;
+                //     -webkit-transform: none;
+                // }
 
-                @media(max-width: 992px) {
-                    width: 100%;
-                    top: 0;
-                    transform: none;
-                    -moz-transform: none;
-                    -o-transform: none;
-                    -webkit-transform: none;
-                }
-
-                @media(max-width: 768px) {
-                    width: 100%;
-                    top: 0;
-                    left: 0;
-                }
+                // @media(max-width: 768px) {
+                //     width: 100%;
+                //     top: 0;
+                //     left: 0;
+                // }
 
                 .content {
-                    margin-bottom: 0;
-                    text-align: center;
-                    width: 100%;
-                    padding-top: 100px;
 
-                    @media(max-width: 1500px) {
-                        transform: scale(0.8);
-                    }
+                    // width: 38%;
+                    // position: absolute;
+                    // left: 6.375%;
 
-                    @media(max-width:768px) {
-                        transform: scale(0.9) translateY(25px);
-                    }
 
-                    @media(max-width:480px) {
-                        transform: scale(0.6) translateY(-113px);
-                    }
+                    // margin-bottom: 0;
+                    // text-align: center;
+                    // width: 100%;
+                    // padding-top: 100px;
+
+                    // @media(max-width: 1500px) {
+                    //     transform: scale(0.8);
+                    // }
+
+                    // @media(max-width:768px) {
+                    //     transform: scale(0.7) translateY(-55px);
+                    // }
+
+                    // @media(max-width:480px) {
+                    //     transform: scale(0.6) translateY(-113px);
+                    // }
                 }
 
                 .content-child {
@@ -1715,14 +1711,10 @@ $color-yellow : #fff3ae;
             }
 
             &--right {
-                width: 55%;
+                width: 44.875%;
                 position: absolute;
-                right: 7.5%;
-                top: 50%;
-                transform: translateY(-50%);
-                -moz-transform: translateY(-50%);
-                -o-transform: translateY(-50%);
-                -webkit-transform: translateY(-50%);
+                right: 7.6875%;
+                top: 14.4444%;
 
                 @media(max-width: 1300px) {
                     right: 2.5%;

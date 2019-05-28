@@ -55,16 +55,16 @@ module.exports = {
   	entry:javascriptEntry ,
   	devtool : "eval",
 	output: {
-		filename: 'scripts/[name].bundle.js',
+		filename: 'lp2/scripts/[name].bundle.js',
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: "./"
 	},
 	resolve: {
 		extensions: ['.js', '.twig' , '.json'],
 		alias: {
-		  	'src': resolve('src'),
-			'assets': resolve('src/assets'),
-			'lib': resolve('src/lib')
+		  	'src': resolve('src/lp2'),
+			'assets': resolve('src/lp2/assets'),
+			'lib': resolve('src/lp2/lib')
 		}
 	  },
 	module: {
@@ -122,10 +122,10 @@ module.exports = {
 			_:"underscore"
         }),
 		new ExtractTextPlugin({
-			filename: "styles/[name].bundle.css"
+			filename: "lp2/styles/[name].bundle.css"
 		}),  
 		new CopyWebpackPlugin([
-			{ from: './src/scripts/public', to: './scripts' }
+			{ from: './src/scripts/public', to: './lp2/scripts' }
 		]),
 		new CssoWebpackPlugin({ pluginOutputPostfix: 'min' })
     ]
