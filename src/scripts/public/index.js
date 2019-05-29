@@ -1,36 +1,14 @@
-// $('.icon-toggle-mobile').click(function(){
-//     $('.menu').toggleClass('active')
-//     $(this).toggleClass('active')
-// })
 
-
-// function changeViewDetect(){
-//     if($(window).width() < 1400){
-//         $('.taisun-lp2__home--left').css('transform','scale(0.92)')
-//     }
-//     if($(window).width() < 1024){
-//         $('.taisun-lp2__home--left').css('transform','scale(0.8)')
-//     }
-//     if($(window).width() < 480){
-//         $('.taisun-lp2__home--left').css({
-//             'transform':'scale(0.9)',
-//         })
-//     }
-// }
-
-// $(window).on('load',function(){
-//     changeViewDetect()
-// })
-// $(window).on('resize',function(){
-//     changeViewDetect()
-// })
-
-
+/**
+ * CUSTOM SCROLL BAR
+ * 
+ */
 $(".rule-content").mCustomScrollbar();
 $(".list-result").mCustomScrollbar();
 
+
 /**
- * 
+ * Animation Flower falling
  */
 
 TweenLite.set("flower-animate",{perspective:600})
@@ -52,3 +30,43 @@ var warp = document.getElementById("flower-animate"),	w = window.innerWidth , h 
  };
 
 function R(min,max) {return min+Math.random()*(max-min)};
+
+
+/**
+ * upload image file
+ */
+
+
+$('.upload-file').on("change", function(){ 
+  var data_stt = $(this).attr('data-stt');
+  if(this){
+    if (this.files && this.files[0]) {
+      /**data file for send server */
+      console.log(this.files[0])
+      console.log('data-stt',data_stt)
+      if(data_stt == 1){
+        window.uploadImage_1 = this.files[0]
+      }else{
+        window.uploadImage_2 = this.files[0]
+      }
+
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        $('.upload-result__' + data_stt).attr('src', e.target.result);
+        $('.close__' + data_stt).css('opacity','1')
+        // console.log(e.target.result)
+      }
+  
+      reader.readAsDataURL(this.files[0]);
+    }
+  }
+});
+
+
+
+$('.upload-close').click(function(){
+  var data_close = $(this).attr('data-close');
+
+  $('.upload-result__'+data_close).attr('src',null);
+  $('.close__' + data_close).css('opacity','0')
+})
