@@ -42,8 +42,8 @@ $('.upload-file').on("change", function(){
   if(this){
     if (this.files && this.files[0]) {
       /**data file for send server */
-      console.log(this.files[0])
-      console.log('data-stt',data_stt)
+      // console.log(this.files[0])
+
       if(data_stt == 1){
         window.uploadImage_1 = this.files[0]
       }else{
@@ -66,7 +66,7 @@ $('.upload-file').on("change", function(){
 
 $('.upload-close').click(function(){
   var data_close = $(this).attr('data-close');
-
+  $('.file__'+data_close).val('');
   $('.upload-result__'+data_close).attr('src',null);
   $('.close__' + data_close).css('opacity','0')
 })
