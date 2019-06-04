@@ -70,3 +70,13 @@ $('.upload-close').click(function(){
   $('.upload-result__'+data_close).attr('src',null);
   $('.close__' + data_close).css('opacity','0')
 })
+
+
+// When ready...
+window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+});

@@ -127,6 +127,9 @@ $color-yellow : #fff3ae;
             max-width: 200px;
             margin-left: auto;
             margin-right: auto;
+            @media(max-width:340px) {
+                max-width: 155px;
+            }
             img {
                 width: 100%;
             }
@@ -213,6 +216,11 @@ $color-yellow : #fff3ae;
                             width: 105px;
                             height: 40px;
                         }
+                        @media(max-width: 340px) {
+                            width: 94px;
+                            height: 37px;
+                        }
+                        
                     }
 
                     a {
@@ -236,6 +244,10 @@ $color-yellow : #fff3ae;
                             width: 105px;
                             font-size: 15px;
                             height: 40px;
+                        }
+                        @media(max-width: 340px) {
+                            width: 94px;
+                            height: 37px;
                         }
                     }
                 }
@@ -352,21 +364,22 @@ $color-yellow : #fff3ae;
             
             @media(max-width:992px) {
                 transform: translateY(0) scale(0.7);
-                margin-top: 0
+                position: absolute;
+                top: 13%;
+                margin: 0
             }
-            @media(max-width:480px) {
-                margin-top: 3%;
-                transform: translateY(0) scale(0.8);
-            }
+            // @media(max-width:480px) {
+            //     transform: translateY(0) scale(0.8);
+            // }
 
-            @media(max-width:380px) {
-                margin-top: 10px;
-                transform: scale(0.7) translateY(-100px);
-            }
-            @media(max-width:320px) {
-                margin: 0;
-                transform: scale(0.6) translateY(-26%);
-            }
+            // @media(max-width:380px) {
+            //     margin-top: 10px;
+            //     transform: scale(0.7) translateY(-100px);
+            // }
+            // @media(max-width:320px) {
+            //     margin: 0;
+            //     transform: scale(0.6) translateY(-26%);
+            // }
 
             .text-on-bg {
                 position: relative;
@@ -528,7 +541,8 @@ $color-yellow : #fff3ae;
                     color: #fff3ae;
                     -webkit-text-stroke-width: 2px;
                     -webkit-text-stroke-color: black;
-
+                    position: relative;
+                    z-index: 3;
                     @media(max-width: 1400px) {
                         margin-top: -14px;
                     }
@@ -1358,7 +1372,8 @@ $color-yellow : #fff3ae;
                     }
 
                     @media(max-width: 768px) {
-                        margin-right: auto
+                        margin-right: auto;
+                        margin-bottom: 20px;
                     }
 
                     .rule-list {
@@ -1391,8 +1406,8 @@ $color-yellow : #fff3ae;
                             height: 50vh;
                             padding-top: 0
                         }
-                        @media(max-width: 320px) {
-                            height: 39vh;
+                        @media(max-width:480px) {
+                            height: 40vh;
                         }
 
                         .title {
@@ -1847,10 +1862,12 @@ $color-yellow : #fff3ae;
                         position: relative;
                         transform: scale(0.7);
                         margin-right: auto;
+                        
                     }
 
                     @media(max-width: 768px) {
                         transform: scale(0.9);
+                        margin-bottom: 20px;
                     }
 
                     .result-list {
@@ -1943,6 +1960,9 @@ $color-yellow : #fff3ae;
                     @media(max-width: 992px) {
                         height: 50vh;
                         padding-top: 20px;
+                    }
+                    @media(max-width: 480px) {
+                        height: 40vh;
                     }
 
                     ul {
