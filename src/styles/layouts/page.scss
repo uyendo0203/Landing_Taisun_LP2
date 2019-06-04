@@ -308,7 +308,8 @@ $color-yellow : #fff3ae;
             }
 
             &__img {
-                max-width: 200px;
+                // max-width: 200px;
+                max-width: 250px;
                 margin-left: auto;
                 margin-right: auto;
                 @media(max-width:1400px) {
@@ -404,13 +405,13 @@ $color-yellow : #fff3ae;
 
                 &-1 {
                     .parent {
-                        font-size: 200px;
+                        font-size: 180px;
                         color: #11cfff;
                         // text-shadow: -8px 5px 0px #11cfff;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
                         position: relative;
-                        line-height: 100px;
+                        line-height: 80px;
                         
                         @media(max-width: 1024px) {
                             font-size: 120px;
@@ -419,14 +420,13 @@ $color-yellow : #fff3ae;
                     }
 
                     .child {
-                        font-size: 200px;
+                        font-size: 180px;
                         color: #fff3ae;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
                         position: absolute;
-                        left: 8px;
-                        top: 85px;
-
+                        left: 6px;
+                        top: 80px;
                         @media(max-width: 1024px) {
                             font-size: 120px;
                             left: 8px;
@@ -437,7 +437,7 @@ $color-yellow : #fff3ae;
 
                 &-2 {
                     .parent {
-                        font-size: 120px;
+                        font-size: 100px;
                         color: #11cfff;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
@@ -457,13 +457,13 @@ $color-yellow : #fff3ae;
                     }
 
                     .child {
-                        font-size: 120px;
+                        font-size: 100px;
                         color: #fff3ae;
                         -webkit-text-stroke-width: 2px;
                         -webkit-text-stroke-color: black;
                         position: absolute;
                         left: 5px;
-                        top: -8px;
+                        top: -4px;
                         @media(max-width:1310px) {
                             font-size: 95px;
                         }
@@ -618,7 +618,23 @@ $color-yellow : #fff3ae;
             }
 
             .button-click {
-                text-align: center
+                text-align: center;
+                .button-type{
+                    &:before{
+                        height: 60px;
+                        width: 250px;
+                        max-width: 100%;
+                        border-radius: 35px;
+                    }
+                    a{
+                        height: 60px;
+                        width: 250px;
+                        max-width: 100%;
+                        border-radius: 35px;
+                        font-size: 27px;
+                        padding: 7px 0
+                    }
+                }
             }
         }
 
